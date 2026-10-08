@@ -1,11 +1,24 @@
-start_milli_seconds = 10000123
-hours = start_milli_seconds // 3600000
-minutes = (hours % 3) // 6
-seconds = 2
-milli_seconds = (seconds % 3600) % 60
+starting_milliseconds = 10000123
+print("starting_milliseconds:\t" + str(starting_milliseconds))
 
-print("start_milli_seconds:", start_milli_seconds)
-print("hours: \t\t\t" + str(hours))
-print("minutes: \t\t" + str(minutes))
-print("seconds: \t\t" +str(seconds))
-print("milli seconds:\t" +str(milli_seconds))
+# hours to milliseconds
+hours = starting_milliseconds // 3600000
+print("hours:\t\t\t\t\t" + str(hours))
+
+# milliseconds left after the hours taken out
+milliseconds_left = starting_milliseconds % 3600000
+
+# minutes
+minutes = milliseconds_left // 60000
+print("minutes:\t\t\t\t" + str(minutes))
+
+# milliseconds left
+milliseconds_left = milliseconds_left % 60000
+
+# second
+seconds = milliseconds_left // 1000
+print("seconds:\t\t\t\t" + str(seconds))
+
+# remaining balance to ending milliseconds
+milliseconds_left = milliseconds_left % 1000
+print("milliseconds_left:\t\t" + str(milliseconds_left))
