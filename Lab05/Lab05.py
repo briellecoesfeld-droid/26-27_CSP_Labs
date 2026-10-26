@@ -35,7 +35,7 @@ def main():
     x1 = 10
     y1 = 10
     x2 = 990
-    y2 = 20
+    y2 = 10
 
     for x in range(50):
         draw_line(t, x1, y1, x2, y2)
@@ -43,6 +43,14 @@ def main():
         y2 += 15
 
     # Draw bottom-left corner
+    x1 = 990
+    y1 = 10
+    x2 = 990
+    y2 = 630
+
+    for x in range(50):
+        draw_line(t, x1, y1, x2, y2)
+
 
     # Draw top-right corner
 
