@@ -31,7 +31,7 @@ def main():
     draw_line(t, 10, 10 + HEIGHT, 10, 10)
 
 
-    # Draw bottom-right corner
+    # Draw top-right corner
     x1 = 10
     y1 = 10
     x2 = 990
@@ -42,7 +42,7 @@ def main():
         x1 += 19
         y2 += 12
 
-    # Draw bottom-left corner
+    # Draw top-left corner
     x1 = 990
     y1 = 10
     x2 = 10
@@ -53,7 +53,7 @@ def main():
         x1 -= 19
         y2 += 12
 
-    # Draw top-right corner
+    # Draw bottom-left corner
     x1 = 990
     y1 = 640
     x2 = 10
@@ -64,7 +64,7 @@ def main():
         x1 -= 19
         y2 -= 12
 
-    # Draw top-left corner
+    # Draw bottom-right corner
     x1 = 10
     y1 = 640
     x2 = 990
